@@ -55,7 +55,7 @@ def check_message_safety(state:AgentState,runtime:Runtime):
 
     if 'UNSAFE' in result.content.upper():
 
-        print("⚠️  Output flagged as UNSAFE — replacing with safe fallback")
+        print("Output flagged as UNSAFE — replacing with safe fallback")
         last_msg.content = (
                 "I'm unable to provide that response. "
                 "Please rephrase your request or contact support."
